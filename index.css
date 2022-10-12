@@ -1,0 +1,351 @@
+
+img{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+
+body{
+    margin-top: 30px;
+    display: grid;
+    font-family: monospace;
+    margin-left: 8%;
+    column-gap: 2vw;  
+    height: auto;
+    
+}
+
+header{
+    margin-bottom: 20px;
+}
+
+
+/* COLOR */
+
+input.color[type="checkbox"]{
+    
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: none;
+    width: 1.15em;
+    height: 1.15em;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin: 0px;
+    opacity: 0.7;
+}
+
+
+input.color[type="checkbox"]:checked{
+    border: 2px solid transparent;
+}
+
+input.color[type="checkbox"]:hover{
+    
+    opacity:1;
+}
+
+input.color[type="button"]
+{
+    
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: none;
+    width: 1.15em;
+    height: 1.15em;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin: 0px;
+    opacity: 0.7;
+}
+
+
+#grey {
+    background-color: grey;
+    cursor:pointer;
+}
+
+#black {
+    background-color: black;
+    cursor:pointer;
+}
+
+#purple { 
+    background-color:mediumpurple;
+    cursor:pointer;
+}
+
+#blue {
+    background-color: blue;
+    cursor:pointer;
+}
+
+
+#green { 
+    background-color:green;
+    cursor:pointer;
+}
+
+#yellow {
+    background-color:#fce303;
+    cursor:pointer;
+}
+
+#orange{
+    background-color:orange;
+    cursor:pointer;
+}
+
+#red {
+    background-color: red;
+    cursor:pointer;
+}
+
+/* TYPOGRAPHIE */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 2.5em;
+  height: 1.3em;
+  opacity: 0.7;
+}
+
+.switch:hover {
+    opacity:1; 
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  width: 1.15em;
+  height: 1.15em;
+  left: 1px;
+  bottom: 1px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: black;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px black;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/* COMPLEXITY */
+
+.slidecontainer {
+  width: 100%; 
+}
+
+.slidebar {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 175px; /* Full-width */
+  height: 4px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  border-radius: 2px;
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slidebar:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slidebar::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 15px; /* Set a specific slider handle width */
+  height: 15px; /* Slider handle height */
+  border-radius: 50%;
+  background: black; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slidebar::-moz-range-thumb {
+  width: 2px; /* Set a specific slider handle width */
+  height: 2px; /* Slider handle height */
+  
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+/* GENRE */
+
+
+ul {
+  padding: 0;
+  margin: -5px;
+  clear: both;
+  width:  175px
+}
+
+li{
+  list-style-type: none;
+  list-style-position: outside;
+  margin: 2px 5px 2px 5px;
+  float: left;
+}
+
+input.genre[type="checkbox"]:not(:checked), 
+input.genre[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999%;
+}
+
+input.genre[type="checkbox"] + label {
+  display: inline-block;
+  padding: 5px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 7px;
+  color: black;
+  background-color: white;
+  margin-bottom: 10px;
+  opacity: 0.7;
+}
+
+input.genre[type="checkbox"]:checked + label {
+  border: 1px solid white;
+  color: white;
+  background-color: black;
+}
+
+input.genre[type="checkbox"]+label:hover{
+    
+    opacity: 1;
+}
+
+/* BUTTONS */
+
+
+input[type=button] {
+    
+  background-color:transparent;
+  border: 1px solid black;
+  color: black;
+  text-decoration: none;
+  margin: 0px;
+  cursor: pointer;
+  padding: 6px 4px 6px 4px;
+  border-radius: 6px;
+  margin-top: 40px;
+  opacity: 0.7;
+  font-family:monospace;
+  
+}
+
+
+input[type=button]:hover {
+    
+  background-color:black;
+  border: 1px solid black;
+  color: white;
+  text-decoration: none;
+  margin: 0px;
+  cursor: pointer;
+  padding: 6px 4px 6px 4px;
+  border-radius: 6px;
+  margin-top: 40px;
+  opacity: 0.7;
+  font-family:monospace;
+  
+}
+
+input[type=button]:active {
+    
+  background-color:black;
+  border: 1px solid black;
+  color: white;
+  text-decoration: none;
+  margin: 0px;
+  cursor: pointer;
+  padding: 6px 4px 6px 4px;
+  border-radius: 6px;
+  margin-top: 40px;
+  opacity: 1;
+  font-family:monospace;
+  
+}
+
+  
+/*
+
+button {
+  background-color:gainsboro;
+  border: 0;
+  border-radius: 4px;
+  font-family:monospace;
+  font-style:normal;
+  cursor: pointer;
+}
+
+button:hover {
+
+    color:blue;
+}
+
+button:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+*/
+
+/*LAYOUT*/
+
+#linkespalte {
+    
+    float:left;
+    width: 30%;
+}
+
+#rechtespalte{
+    
+     float: right;
+     width: 50%;
+     margin-right: 20%;
+
+}
+
+
+

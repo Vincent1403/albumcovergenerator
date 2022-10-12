@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title> Album Cover Generator </title>
+ 
+    <link rel="stylesheet" href="index.css"/>
+    <script src="index.js"></script>
+  </head>
+ 
+  <body>
+ 
+   <div id="wrapper">
+   <div id="linkespalte">
+        <header>
+            2031 <br>
+            Vincent Eutin <br>
+            Album-Cover-Generator
+         </header>  
+ 
+ 
+ 
+        <p> Color <br> </p>
+ 
+            <input id="grey" type="checkbox" checked class="color" /><label for="confirm"> </label>
+            <input id="black" type="checkbox" checked class="color" /><label for="confirm"></label>
+            <input id="purple" type="checkbox" checked class="color"/><label for="confirm"></label>
+            <input id="blue" type="checkbox" checked class="color"/><label for="confirm"></label>
+            <input id="green" type="checkbox" checked class="color"/><label for="confirm"></label>
+            <input id="yellow" type="checkbox" checked class="color"/><label for="confirm"></label>
+            <input id="orange" type="checkbox" checked class="color"/><label for="confirm"></label>
+            <input id="red" type="checkbox" checked class="color"/><label for="confirm"></label>
+ 
+ 
+ 
+        <p> Typographie <br> </p>
+ 
+            <label class="switch">
+              <input id="typography" type="checkbox" checked>
+              <span class="slider round"></span>
+            </label>
+ 
+ 
+        <p> Complexity <br> </p>
+ 
+               <input type="range" min="1" max="100" value="50" class="slidebar" id="complexity">
+ 
+ 
+ 
+ 
+        <p> Genre <br> </p>
+ 
+<ul>
+          <li>
+            <input type="checkbox" id="All" name="All" value="All" class="genre">
+            <label for="All">All</label>
+          </li>
+ 
+          <li>
+            <input type="checkbox" id="Indie" name="Indie" value="Indie" class="genre">
+            <label for="Indie">Indie</label>
+          </li>
+ 
+          <li>
+            <input type="checkbox" id="Metal" name="Metal" value="Metal" class="genre">
+            <label for="Metal">Metal</label>
+          </li>
+ 
+          <li>
+            <input type="checkbox" id="Psychedelic" name="Psychedelic" value="Psychedelic" class="genre">
+            <label for="Psychedelic">Psychedelic</label>
+          </li>
+ 
+          <li>
+            <input type="checkbox" id="Pop" name="Pop" value="Pop" class="genre">
+            <label for="Pop">Pop</label>
+          </li>
+ 
+          <li>
+            <input type="checkbox" id="Hiphop" name="Hiphop" value="Hiphop" class="genre">
+            <label for="Hiphop">Hiphop</label>
+          </li>
+</ul>
+ 
+       <ul>
+          <li>
+            <input type="button" id="Generate" name="Generate" value="Generate" class="Button" onclick="get_image()">
+            <label for="Generate"></label>
+          </li>
+ 
+          <li>
+            <input type="button" id="Download" name="Download" value="Download" class="Button">
+            <label for="Download"></label>
+          </li>
+ 
+        </ul>
+       </div>
+ 
+        <div id="rechtespalte">
+ 
+        <!-- <img src="images/1.jpg"  width="500" height="600"> -->
+        <img id="image_shower"width="500" height="600"/>
+ 
+      </div>
+      </div>
+ 
+    </body>
+ 
+</html>
